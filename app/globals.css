@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-charcoal antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+  }
+
+  a {
+    @apply text-clay transition-colors;
+  }
+
+  a:hover {
+    @apply text-clay-dark;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 rounded px-7 py-3.5 font-sans text-[15px] font-semibold tracking-tight transition-colors;
+  }
+
+  .btn-primary {
+    @apply btn bg-clay text-cream hover:bg-clay-dark;
+  }
+
+  .btn-secondary {
+    @apply btn bg-ink text-cream hover:bg-charcoal;
+  }
+
+  .section-eyebrow {
+    @apply text-[13px] font-semibold uppercase tracking-[0.08em] text-clay;
+  }
+}
