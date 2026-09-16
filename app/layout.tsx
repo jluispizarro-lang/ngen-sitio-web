@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Spectral, Manrope } from "next/font/google";
 import "./globals.css";
 
@@ -16,10 +16,14 @@ const manrope = Manrope({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  colorScheme: "light",
+};
+
 export const metadata: Metadata = {
   title: "Ngen Servicios de Ingeniería",
   description:
-    "Asesoría y estudios de ingeniería para servicios públicos: diseño, supervisión, ejecución y administración de programas y proyectos en Riego Tecnificado, Cambio Climático, Producción Ganadera, Análisis Financiero y Producción Hortofrutícola. Regiones de Atacama a O'Higgins.",
+    "Asesoría y estudios de ingeniería para el sector público y privado: diseño, supervisión, ejecución y administración de programas y proyectos en Riego Tecnificado, Cambio Climático, Producción Ganadera, Análisis Financiero, Producción Hortofrutícola y Diálogo Social. Incluye mitigación y compensación ambiental para proyectos mineros, eólicos y solares. Regiones de Atacama a O'Higgins.",
   metadataBase: new URL("https://ngen.example.cl"),
   openGraph: {
     title: "Ngen Servicios de Ingeniería",

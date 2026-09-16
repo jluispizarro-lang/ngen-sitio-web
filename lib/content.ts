@@ -87,7 +87,8 @@ export type TrackRecordItem = {
 
 export const trackRecordIntro = {
   title: "Cifras que respaldan la experiencia",
-  subtitle: "Resultados concretos de programas y proyectos en los que hemos tenido responsabilidad técnica.",
+  subtitle:
+    "Resultados concretos de programas y proyectos en los que nuestro equipo ha tenido responsabilidad técnica.",
 };
 
 export const trackRecord: TrackRecordItem[] = [
@@ -116,7 +117,6 @@ export const institutionalClients: string[] = [
   "INFOR",
   "INIA",
   "Municipalidad de La Higuera",
-  "CNR",
   "Dirección Meteorológica de Chile",
   "Dirección General de Aeronáutica Civil",
   "Asociación de Exportadores de Frutas de Chile A.G.",
@@ -130,16 +130,10 @@ export type TeamMember = {
 
 export const team: TeamMember[] = [
   {
-    name: "José Luis Pizarro",
-    role: "Ingeniero Agrónomo",
+    name: "Gines Orrego",
+    role: "Administración General",
     credentials:
-      "Experto Profesional en Prevención de Riesgos · Postítulo en Gestión Ambiental · Diplomado en Evaluación Social de Proyectos",
-  },
-  {
-    name: "Ginés Orrego",
-    role: "Ingeniero Comercial",
-    credentials:
-      "27 años de experiencia en evaluación crediticia y análisis financiero de pequeñas y medianas empresas · formulación, postulación y rendición de proyectos de inversión",
+      "Ingeniero Comercial · 27 años de experiencia en evaluación crediticia y análisis financiero de pequeñas y medianas empresas · formulación, postulación y rendición de proyectos de inversión",
   },
 ];
 
@@ -168,7 +162,7 @@ export const siteContent = {
     eyebrow: "Asesoría y estudios de ingeniería",
     headline: "Ingeniería que se sostiene en el terreno.",
     subheadline:
-      "Diseñamos, supervisamos y ejecutamos programas y proyectos de ingeniería para servicios públicos — con la experiencia real de haberlos llevado desde el papel hasta el aterrizaje en terreno.",
+      "Diseñamos, supervisamos y ejecutamos programas y proyectos de ingeniería para el sector público y privado — incluyendo mitigación y compensación ambiental de proyectos mineros, eólicos y solares — con la experiencia real de haberlos llevado desde el papel hasta el aterrizaje en terreno.",
     ctaPrimary: "Conversemos sobre tu proyecto",
     ctaSecondary: "Ver especialidades",
   },

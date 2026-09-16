@@ -13,9 +13,9 @@ export default function Differentiator() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-8 border-t border-cream/20 pt-10 sm:grid-cols-2">
+        <div className="mt-14 border-t border-cream/20 pt-10">
           {team.map((member) => (
-            <div key={member.name}>
+            <div key={member.name} className="max-w-lg">
               <p className="text-[13px] uppercase tracking-[0.06em] text-cream">
                 {member.name} <span className="text-clay-light/80">— {member.role}</span>
               </p>

@@ -5,6 +5,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* El sitio es intencionalmente claro. Sin esto, algunos navegadores
+       (ej. "Oscurecer páginas web" de Chrome Android) reinterpretan y
+       oscurecen automáticamente los colores del sitio. */
+    color-scheme: light;
   }
 
   body {
