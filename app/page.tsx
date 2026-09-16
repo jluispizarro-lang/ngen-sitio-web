@@ -1,6 +1,5 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import Landscape from "@/components/Landscape";
 import ServiceCycle from "@/components/ServiceCycle";
 import Specialties from "@/components/Specialties";
 import TrackRecord from "@/components/TrackRecord";
@@ -14,7 +13,6 @@ export default function HomePage() {
     <main>
       <Nav />
       <Hero />
-      <Landscape />
       <ServiceCycle />
       <Specialties />
       <TrackRecord />
