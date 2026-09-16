@@ -39,6 +39,7 @@ export type Specialty = {
   title: string;
   description: string;
   icon: "riego" | "clima" | "ganaderia" | "financiero" | "hortofruticola" | "dialogo";
+  link?: { label: string; href: string };
 };
 
 export const specialties: Specialty[] = [
@@ -59,6 +60,7 @@ export const specialties: Specialty[] = [
     description:
       "Diseño constructivo, cubicación y presupuesto de infraestructura para producción pecuaria, con seguimiento hasta su ejecución.",
     icon: "ganaderia",
+    link: { label: "Ver fichas técnicas del Plan Caprino", href: "/plan-caprino" },
   },
   {
     title: "Análisis Financiero",
@@ -153,10 +155,11 @@ export const siteContent = {
   companyName: "Ngen",
   companyFullName: "Ngen Servicios de Ingeniería",
   nav: [
-    { label: "Servicios", href: "#servicios" },
-    { label: "Especialidades", href: "#especialidades" },
-    { label: "Cobertura", href: "#cobertura" },
-    { label: "Nosotros", href: "#nosotros" },
+    { label: "Servicios", href: "/#servicios" },
+    { label: "Especialidades", href: "/#especialidades" },
+    { label: "Plan Caprino", href: "/plan-caprino" },
+    { label: "Cobertura", href: "/#cobertura" },
+    { label: "Nosotros", href: "/#nosotros" },
   ],
   hero: {
     eyebrow: "Asesoría y estudios de ingeniería",

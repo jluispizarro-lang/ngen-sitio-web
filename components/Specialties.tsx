@@ -18,6 +18,14 @@ export default function Specialties() {
                 <Icon className="h-[30px] w-[30px] text-clay" />
                 <h3 className="font-sans text-lg font-semibold text-ink">{specialty.title}</h3>
                 <p className="text-sm leading-relaxed text-stone">{specialty.description}</p>
+                {specialty.link && (
+                  <a
+                    href={specialty.link.href}
+                    className="mt-auto text-sm font-medium text-clay hover:text-clay-dark"
+                  >
+                    {specialty.link.label} →
+                  </a>
+                )}
               </li>
             );
           })}

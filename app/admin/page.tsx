@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { authOptions } from "@/lib/auth";
 import { getUserByClientId, listClients, listDocumentsByClient } from "@/lib/store";
+import { listFichas } from "@/lib/fichas-store";
 import PortalHeader from "@/components/portal/PortalHeader";
 import { IconArrowRight } from "@/components/icons";
 
@@ -13,6 +14,7 @@ export default async function AdminPage() {
   }
 
   const clients = listClients();
+  const fichaCount = listFichas().length;
 
   return (
     <main className="min-h-screen">
@@ -29,6 +31,20 @@ export default async function AdminPage() {
             Nuevo cliente
           </Link>
         </div>
+
+        <Link
+          href="/admin/fichas"
+          className="mt-8 flex items-center justify-between gap-4 rounded border border-hairline px-5 py-5 hover:bg-sand"
+        >
+          <div>
+            <p className="font-medium text-ink">Plan Caprino — fichas técnicas</p>
+            <p className="mt-1 text-[13px] text-stone">
+              {fichaCount} ficha{fichaCount === 1 ? "" : "s"} publicada{fichaCount === 1 ? "" : "s"} ·
+              biblioteca pública en /plan-caprino
+            </p>
+          </div>
+          <IconArrowRight className="h-4 w-4 text-stone" />
+        </Link>
 
         {clients.length === 0 ? (
           <p className="mt-10 text-stone">Todavía no hay clientes cargados.</p>
