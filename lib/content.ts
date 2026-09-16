@@ -137,6 +137,18 @@ export const team: TeamMember[] = [
     credentials:
       "Ingeniero Comercial · 27 años de experiencia en evaluación crediticia y análisis financiero de pequeñas y medianas empresas · formulación, postulación y rendición de proyectos de inversión",
   },
+  {
+    name: "Guillermo Palta",
+    role: "Producción Ganadera",
+    credentials:
+      "Ingeniero en Ejecución Agrícola, Mención en Producción Ganadera · Experto en Producción Ganadera · autor y coautor de fichas técnicas del Plan Caprino en manejo sanitario, nutrición e infraestructura",
+  },
+  {
+    name: "Catalina Pizarro Orrego",
+    role: "Diseño y Producción de Material Técnico",
+    credentials:
+      "Estudiante de Ingeniería Civil en Electrónica · ilustración, revisión y diseño del material didáctico del Plan Caprino",
+  },
 ];
 
 export type Region = {
