@@ -29,6 +29,36 @@ export default function PlanCaprinoPage() {
         </p>
       </section>
 
+      <section className="border-t border-hairline bg-sand">
+        <div className="mx-auto max-w-content px-6 py-16 md:px-9">
+          <h2 className="section-eyebrow">Recurso destacado</h2>
+          <div className="mt-6 flex flex-col gap-5 rounded border border-hairline bg-cream p-7 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h3 className="font-serif text-2xl font-medium text-ink">
+                Manual del Productor Caprino
+              </h3>
+              <p className="mt-2 max-w-xl text-[15px] leading-relaxed text-stone">
+                Fundamentos técnicos de producción caprina lechera — selección y genética, manejo
+                reproductivo, nutrición, manejo sanitario, calidad e inocuidad — más 14 fichas
+                técnicas. 119 páginas, ilustrado, de descarga libre (PDF, 8 MB).
+              </p>
+              <p className="mt-3 text-[13px] uppercase tracking-[0.06em] text-clay">
+                Ngen Servicios de Ingeniería
+              </p>
+            </div>
+            <a
+              href="/descargas/Manual_del_Productor_Caprino.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary shrink-0"
+            >
+              <IconDownload className="h-4 w-4" />
+              Descargar
+            </a>
+          </div>
+        </div>
+      </section>
+
       {featured.length > 0 && (
         <section className="border-t border-hairline bg-sand">
           <div className="mx-auto max-w-content px-6 py-16 md:px-9">
